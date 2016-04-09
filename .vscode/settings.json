@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "node_modules/**/": true,
+        "src/**/*.js": true,
+        "src/**/*.d.ts": true,
+        "src/**/*.js.map": true,
+        "test/**/*.js": true
+    }
+}

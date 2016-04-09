@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es5",
+        "declaration": true,
+        "noImplicitAny": false,
+        "outDir": "src",
+        "rootDir": "./src",
+        "sourceMap": true,
+        "noResolve": true
+    },
+    "exclude": [
+        "test/typescript.list.test.ts",
+        "lib",
+        "node_modules",
+        "typings"
+    ]
+    
+}

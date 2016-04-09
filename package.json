@@ -1,0 +1,54 @@
+{
+  "name": "typescript.list",
+  "version": "6.0.0",
+  "description": "TypeScript List Datatype",
+  "main": "lib/typescript.list.js",
+  "typings": "lib/typescript.list.d.ts",
+  "typescript": {
+    "definitions": "lib/typescript.list.d.ts"
+  },
+  "scripts": {
+    "pretest": "tsc && tsc --module commonjs test/typescript.list.test.ts",
+    "test": "mocha",
+    "setup": "typings install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlippieCoetser/Events.git"
+  },
+  "keywords": [
+    "Datatype"
+  ],
+  "files": [
+    "lib/typescript.list.js",
+    "lib/typescript.list.d.ts",
+    "lib/typescript.list.ts",
+    "lib/typescript.list.js.map"
+  ],
+  "author": "Flippie Coetser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FlippieCoetser/List/issues"
+  },
+  "homepage": "https://github.com/FlippieCoetser/List#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "complexity-report": "^1.4.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-copy": "0.0.2",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.2.0",
+    "gulp-sequence": "^0.4.5",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tslint": "^4.3.3",
+    "gulp-typescript": "*",
+    "istanbul": "^0.4.2",
+    "merge2": "^1.0.1",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0",
+    "tslint": "^3.5.0",
+    "typings": "^0.7.7"
+  }
+}

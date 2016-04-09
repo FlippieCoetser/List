@@ -1,0 +1,36 @@
+{
+  "name": "typescript.list",
+  "description": "TypeScript List Datatype",
+  "main": "lib/typescript.list.js",
+  "authors": [
+    "Flippie Coetser"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Datatype"
+  ],
+  "homepage": "https://github.com/FlippieCoetser/Events",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "src",
+    "typings",
+    "coverage",
+    "complexity",
+    ".vscode",
+    ".gitignore",
+    ".npmignore",
+    "complexity",
+    "gulpfile.js",
+    "intelliSense.gif",
+    "package.json",
+    "tconfig.json",
+    "tslint.json",
+    "typings.json",
+    "wallaby.js"
+  ]
+}

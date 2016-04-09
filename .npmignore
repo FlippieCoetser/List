@@ -1,0 +1,16 @@
+.vscode/*
+typings/*
+test/*
+node_modules/*
+src/*
+complexity/*
+coverage/*
+.gitignore
+bower.json
+complexity.md
+gulpfile.js
+intelliSense.gif
+tsconfig.json
+tslint.json
+typings.json
+wallaby.js
