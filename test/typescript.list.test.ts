@@ -5,7 +5,7 @@ import sinonChai = require("sinon-chai");
 let should = chai.should();
 chai.use(sinonChai);
 
-import {List, IList} from "../src/typescript.list";
+import {List} from "../src/typescript.list";
 
 interface IItem {
     FirstName: string;
@@ -14,16 +14,15 @@ interface IItem {
 
 describe("List", () => {
     it("Event should have static default limit of 10 listerens", () => {
-       var AddressBook = new List<IItem>();
+       let AddressBook = new List<IItem>();
        AddressBook.push({
            FirstName: "John",
-           LastName: "doe"
+           LastName: "doe",
        });
        AddressBook.push({
            FirstName: "Silke",
-           LastName: "de Jong"
+           LastName: "de Jong",
         });
-       
        let FirstName = "John";
        let filter = (item: IItem, value) => item.FirstName === FirstName;
        let John = AddressBook.where(filter, FirstName);
