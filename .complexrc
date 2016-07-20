@@ -1,8 +1,0 @@
-{
-  "output": "./complexity/report.md",
-  "format": "markdown",
-  "ignoreerrors": true,
-  "filepattern": "\\.js$",
-  "logicalor": true,
-  "newmi": true
-}
