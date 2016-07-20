@@ -34,6 +34,5 @@ describe("List", () => {
        let filteredList = list.where(filter, name);
        filteredList.length.should.eql(1);
        filteredList[0].Name.should.eql(name);
-
     });
 });

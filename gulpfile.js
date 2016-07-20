@@ -8,9 +8,8 @@ var gulp = require('gulp'),
    del = require('del'),
    copy = require('gulp-copy'),
    sequence = require('gulp-sequence'),
-   istanbul = require('gulp-istanbul');
-   
-var tsProject = tsc.createProject('tsconfig.json');
+   istanbul = require('gulp-istanbul'),
+   project = tsc.createProject('tsconfig.json');
 
 //***************************************************************************
 //* LINT
@@ -27,9 +26,9 @@ gulp.task('src:lint', function(){
 //* BUILD
 //***************************************************************************
 gulp.task('src:build', function(){
-   var tsResult = tsProject.src()
+   var tsResult = project.src()
        .pipe(sourcemaps.init())
-       .pipe(tsc(tsProject));
+       .pipe(tsc(project));
    
    return merge([
       tsResult.dts.pipe(gulp.dest('./src')),

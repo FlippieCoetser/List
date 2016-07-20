@@ -13,7 +13,7 @@
     "exclude": [
         "test/typescript.list.test.ts",
         "lib",
-        "node_modules",
+        "node_modules/**/*.ts",
         "typings"
     ]
     
