@@ -7,25 +7,33 @@ chai.use(sinonChai);
 
 import {List} from "../src/typescript.list";
 
-interface IItem {
-    FirstName: string;
-    LastName: string;
+interface Item {
+    Name: string;
 }
 
 describe("List", () => {
-    it("Event should have static default limit of 10 listerens", () => {
-       let AddressBook = new List<IItem>();
-       AddressBook.push({
-           FirstName: "John",
-           LastName: "doe",
-       });
-       AddressBook.push({
-           FirstName: "Silke",
-           LastName: "de Jong",
-        });
-       let FirstName = "John";
-       let filter = (item: IItem, value) => item.FirstName === FirstName;
-       let John = AddressBook.where(filter, FirstName);
-       John[0].FirstName.should.eql(FirstName);
+    it("List should eql Array", () => {
+       let Name1: Item = { Name: "Name1" };
+       let Name2: Item = { Name: "Name2"  };
+       let list = new List<Item>();
+       list.push(Name1);
+       list.push(Name2);
+       let array = new Array<Item>();
+       array.push(Name1);
+       array.push(Name2);
+       list.should.eql(array);
+    });
+    it("invoke Where(filter, value) should return filetered list", () => {
+       let Name1: Item = { Name: "Name1" };
+       let Name2: Item = { Name: "Name2"  };
+       let list = new List<Item>();
+       list.push(Name1);
+       list.push(Name2);
+       let filter = (item: Item, value: string) => item.Name === value;
+       let name = "Name1";
+       let filteredList = list.where(filter, name);
+       filteredList.length.should.eql(1);
+       filteredList[0].Name.should.eql(name);
+
     });
 });
