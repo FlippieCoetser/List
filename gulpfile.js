@@ -60,7 +60,7 @@ gulp.task('test:coverage', function(){
 gulp.task('test:mocha', function(){
    return gulp.src('./test/*.js', {read: false})
           .pipe(mocha({reporter: 'spec'}))
-          .pipe(istanbul.writeReports()); 
+          .pipe(istanbul.writeReports({dir: './analysis/coverage'})); 
 });
 gulp.task('test', sequence('build', 'test:build', 'test:coverage', 'test:mocha'));
 
