@@ -91,7 +91,7 @@ gulp.task('test', sequence('build', 'test:build', 'test:coverage', 'test:mocha')
 // ***************************************************************************
 
 gulp.task('analyse:plato', function(){
-    exec('plato -r -d ./analysis/complexity/report lib', (error, stdout, stderr) => {
+    exec('plato -r -d ./analysis/complexity/report src', (error, stdout, stderr) => {
         if (error) {
             console.error(`exec error: ${error}`);
             return;
