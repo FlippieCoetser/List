@@ -3,7 +3,7 @@
 ## Problem List&lt;T> solves
 Using the **filter** method of an **Array&lt;T>** , in **TypeScript**, don't allow for additional parameters to be passed in and used as part of the filter condition.
 **List&lt;T>** solves this problem by providing a **where** method. This **where** method do allow for additional parameters to be passed in and used as part of the filter.
-All standard **Array&lt;T>** properties and methods are still available on **List&lt;T>. 
+All standard **Array&lt;T>** properties and methods are available on **List&lt;T>**. 
 
 ## General Use 
 Define interface for **&lt;T>**
