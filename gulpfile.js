@@ -10,7 +10,8 @@ var gulp = require('gulp'),
    sequence = require('gulp-sequence'),
    istanbul = require('gulp-istanbul'),
    project = tsc.createProject('tsconfig.json'),
-   exec = require('child_process').exec;
+   exec = require('child_process').exec,
+   mkdir = require('mkdirp');
 
 // ***************************************************************************
 // * CLEAN
@@ -106,6 +107,7 @@ gulp.task('analyse:plato', function(){
 });
 
 gulp.task('analyse:complexity', function(){
+    mkdir('./analysis/complexity');
     exec('cr --config .complexrc ./src', (error, stdout, stderr) => {
         if (error) {
             console.error(`exec error: ${error}`);

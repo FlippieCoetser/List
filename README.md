@@ -39,7 +39,7 @@ let newList = list.where(filter, "Name1");
 ### Install Dependencies
 ```
 npm install
-npm setup
+npm run setup
 ```
 
 ### Unit Tests

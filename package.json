@@ -7,7 +7,7 @@
   "scripts": {
     "pretest": "tsc && tsc --module commonjs test/typescript.list.test.ts",
     "test": "mocha",
-    "setup": "mkdir analysis && mkdir analysis/complexity && typings install"
+    "setup": "typings install"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,6 @@
   "files": [
     "lib/typescript.list.js",
     "lib/typescript.list.d.ts",
-    "lib/typescript.list.ts",
     "lib/typescript.list.js.map"
   ],
   "author": "Flippie Coetser",
@@ -46,9 +45,8 @@
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0",
     "tslint": "^3.5.0",
-    "typings": "^0.7.7"
-  },
-  "dependencies": {
+    "typings": "^0.7.7",
+    "mkdirp": "^0.5.1",
     "plato": "^1.6.0"
   }
 }
