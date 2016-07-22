@@ -7,7 +7,7 @@
   "scripts": {
     "pretest": "tsc && tsc --module commonjs test/typescript.list.test.ts",
     "test": "mocha",
-    "setup": "typings install"
+    "setup": "mkdir analysis && mkdir analysis/complexity && typings install"
   },
   "repository": {
     "type": "git",
