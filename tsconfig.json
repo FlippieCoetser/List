@@ -11,10 +11,9 @@
         "noResolve": true
     },
     "exclude": [
-        "test/typescript.list.test.ts",
+        "test/**/*.ts",
         "lib",
-        "node_modules/**/*.ts",
-        "typings"
+        "node_modules/**/*.ts"
     ]
     
 }

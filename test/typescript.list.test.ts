@@ -1,9 +1,15 @@
 /// <reference path="../typings/main.d.ts" />
+/* tslint:disable */
 import chai = require("chai");
 import sinon = require("sinon");
 import sinonChai = require("sinon-chai");
 let should = chai.should();
 chai.use(sinonChai);
+/* tslint:enable */
+
+// ***************************************************************************
+// * Unit Tests
+// ***************************************************************************
 
 import {List} from "../src/typescript.list";
 

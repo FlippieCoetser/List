@@ -49,6 +49,5 @@ gulp test
 
 ### Static Code Analysis
 ```
-plato -r -d ./analysis/complexity/report lib
-cr --config .complexrc ./src/*.js
+gulp analyse
 ```

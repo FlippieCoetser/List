@@ -4,9 +4,6 @@
   "description": "TypeScript List Datatype",
   "main": "lib/typescript.list.js",
   "typings": "lib/typescript.list.d.ts",
-  "typescript": {
-    "definitions": "lib/typescript.list.d.ts"
-  },
   "scripts": {
     "pretest": "tsc && tsc --module commonjs test/typescript.list.test.ts",
     "test": "mocha",
