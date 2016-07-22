@@ -5,6 +5,7 @@
         "src/**/*.js": true,
         "src/**/*.d.ts": true,
         "src/**/*.js.map": true,
-        "test/**/*.js": true
+        "test/**/*.js": true,
+        "lib": true
     }
 }
