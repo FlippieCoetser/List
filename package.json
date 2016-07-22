@@ -1,6 +1,6 @@
 {
   "name": "typescript.list",
-  "version": "6.1.0",
+  "version": "6.2.0",
   "description": "TypeScript List Datatype",
   "main": "lib/typescript.list.js",
   "typings": "lib/typescript.list.d.ts",
