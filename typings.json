@@ -4,5 +4,8 @@
     "mocha": "registry:dt/mocha#2.2.5+20151023103246",
     "sinon": "registry:dt/sinon#1.16.0+20151027143416",
     "sinon-chai": "registry:dt/sinon-chai#2.7.0+20160111233447"
+  },
+  "globalDependencies": {
+    "node": "registry:dt/node#6.0.0+20160720070758"
   }
 }
