@@ -11,7 +11,7 @@ chai.use(sinonChai);
 // * Unit Tests
 // ***************************************************************************
 
-import List from "../src/typescript.list";
+import List = require("../src/typescript.list");
 
 interface Item {
     Name: string;
