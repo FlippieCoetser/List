@@ -4,3 +4,5 @@ export class List<T> extends Array<T> {
     }
 }
 
+exports.List = List;
+
